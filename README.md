@@ -35,6 +35,20 @@ Usually, you can simply import RProgressHud.
 import RProgressHud
 ```
 
+You can use RProgressHud while running time-consuming tasks. The recommended way to use RProgressHud is to start the spinner and it automatically prevents the user from interacting with the UI.
+
+Use the following code to start the spinner and disable UI interactions for the user:
+
+```swift
+RProgressHud.shared.startHud(view: self.view)
+```
+
+Use the following code to stop the spinner and enable UI interaction for the user:
+
+```swift
+RProgressHud.shared.stopHud(view: self.view)
+```
+
 ## Requirements
 The current version of RProgressHud requires:
 * Xcode 12 or later
